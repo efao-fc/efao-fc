@@ -2,43 +2,48 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EFAO FC - Início</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="admin.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EFAO FC - Feed</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="feed.js"></script>
 </head>
 <body>
+  <header class="top-header">
+    <div class="logo">EFAO-FC</div>
     <nav class="top-nav">
-        <a href="index.html">🏠</a>
-        <a href="publicacoes.html">📝</a>
-        <a href="fotos.html">📷</a>
-        <a href="#">🎞️</a>
-        <a href="#">📺</a>
-        <a href="#">☰</a>
+      <a href="index.html" title="Início">🏠</a>
+      <a href="#" title="Publicar">➕</a>
+      <a href="#" title="Reels">🎞️</a>
+      <a href="#" title="Vídeos">📺</a>
+      <a href="#" title="Menu">☰</a>
     </nav>
+  </header>
 
-    <main>
-        <h2>Feed do EFAO FC</h2>
-        <div id="posts">
-            <div class="feed-post"><p>⚽ Vitória no último jogo! 2x0 🔥</p></div>
-            <div class="feed-post"><p>📸 Novas fotos do treino disponíveis.</p></div>
-            <div class="feed-post"><p>📝 Próximo jogo: sábado às 16h no campo do bairro.</p></div>
-        </div>
-        <div id="post-form" style="display:none;">
-            <h3>Nova publicação</h3>
-            <textarea id="new-post" placeholder="Escreve aqui a nova publicação..."></textarea>
-            <button onclick="addPost()">Publicar</button>
-        </div>
-        <button id="admin-login-btn">Login do Administrador</button>
-        <button id="admin-logout-btn" style="display:none;">Sair</button>
-    </main>
+  <main>
+    <div class="story-section">
+      <label class="story-add">➕ Adicionar História
+        <input type="file" accept="image/*" onchange="addStory(this)">
+      </label>
+      <div id="stories"></div>
+    </div>
 
-    <nav class="bottom-nav">
-        <a href="index.html">🏠</a>
-        <a href="publicacoes.html">📝</a>
-        <a href="fotos.html">📷</a>
-        <a href="#" id="admin-login-btn-footer">🔐</a>
-    </nav>
+    <section id="feed"></section>
+
+    <div class="post-form">
+      <h3>Nova Publicação</h3>
+      <input type="text" id="author" placeholder="Teu nome">
+      <input type="file" id="media" accept="image/*,video/*">
+      <textarea id="text" placeholder="Escreve algo..."></textarea>
+      <button onclick="postar()">Publicar</button>
+    </div>
+  </main>
+
+  <footer class="bottom-nav">
+    <a href="index.html">🏠</a>
+    <a href="#">📷</a>
+    <a href="#">🎥</a>
+    <a href="#">👤</a>
+  </footer>
 </body>
 </html>
