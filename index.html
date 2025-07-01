@@ -4,36 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EFAO FC - Página Principal</title>
+    <title>EFAO FC - Início</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="admin.js"></script>
 </head>
 <body>
-    <header>
-        <img src="EFAO_FC_Logo_Cortado.png" alt="Logo" class="logo">
-        <h1>EFAO FC</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="publicacoes.html">Publicações</a>
-            <a href="fotos.html">Fotos</a>
-        </nav>
-    </header>
+    <nav class="top-nav">
+        <a href="index.html">🏠</a>
+        <a href="publicacoes.html">📝</a>
+        <a href="fotos.html">📷</a>
+        <a href="#">🎞️</a>
+        <a href="#">📺</a>
+        <a href="#">☰</a>
+    </nav>
 
     <main>
-        <h2>Bem-vindo ao site oficial do EFAO FC</h2>
-        <p>Veja as últimas notícias e atualizações do nosso clube.</p>
+        <h2>Feed do EFAO FC</h2>
+        <div id="posts">
+            <div class="feed-post"><p>⚽ Vitória no último jogo! 2x0 🔥</p></div>
+            <div class="feed-post"><p>📸 Novas fotos do treino disponíveis.</p></div>
+            <div class="feed-post"><p>📝 Próximo jogo: sábado às 16h no campo do bairro.</p></div>
+        </div>
+        <div id="post-form" style="display:none;">
+            <h3>Nova publicação</h3>
+            <textarea id="new-post" placeholder="Escreve aqui a nova publicação..."></textarea>
+            <button onclick="addPost()">Publicar</button>
+        </div>
         <button id="admin-login-btn">Login do Administrador</button>
         <button id="admin-logout-btn" style="display:none;">Sair</button>
-    
     </main>
+
     <nav class="bottom-nav">
         <a href="index.html">🏠</a>
         <a href="publicacoes.html">📝</a>
         <a href="fotos.html">📷</a>
         <a href="#" id="admin-login-btn-footer">🔐</a>
     </nav>
-    
-
-    <footer>&copy; 2025 EFAO FC</footer>
 </body>
 </html>

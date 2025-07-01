@@ -49,3 +49,38 @@ nav.bottom-nav a {
 nav.bottom-nav a:hover {
     color: #0044cc;
 }
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 200;
+}
+.top-nav a {
+    color: #002366;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.top-nav a:hover {
+    color: #0044cc;
+}
+main {
+    padding: 70px 1em 80px;  /* espaço para topo e barra inferior */
+}
+.feed-post {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+.feed-post p {
+    margin: 0;
+}
