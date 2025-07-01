@@ -2,56 +2,29 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
+  <title>EFAO-FC | Início</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EFAO-FC</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="firebase-config.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
-  <header>
-    <div class="top-bar">
-      <div class="logo">EFAO-FC</div>
-      <div class="actions">
-        <button title="Publicar">➕</button>
-        <button title="Notificações">❤️</button>
-        <button title="Mensagens">✉️</button>
-      </div>
-    </div>
-    <div class="stories">
-      <div class="story self">+ Sua história</div>
-      <div class="story">⚽ Jogador 1</div>
-      <div class="story">⚽ Jogador 2</div>
-      <div class="story">⚽ Jogador 3</div>
+  <header class="top-bar">
+    <div class="logo">EFAO-FC</div>
+    <div class="actions">
+      <button onclick="logout()">Sair</button>
     </div>
   </header>
 
-  <main id="feed">
-    <div class="post">
-      <div class="post-header">
-        <div class="profile-pic">🔵</div>
-        <div class="author">efao_fc_oficial</div>
-        <div class="options">•••</div>
-      </div>
-      <img src="foto.jpg" alt="Publicação" class="post-image"/>
-      <div class="post-actions">
-        ❤️ 💬 📤 🔖
-      </div>
-      <div class="post-info">
-        <p><strong>120 gostos</strong></p>
-        <p><strong>efao_fc_oficial</strong> Grande vitória hoje! 🔥</p>
-        <p>Ver todos os 8 comentários</p>
-      </div>
-    </div>
+  <main>
+    <div id="stories-container"></div>
+    <section id="feed"></section>
   </main>
 
-  <footer>
-    <nav class="bottom-menu">
-      <a href="#">🏠</a>
-      <a href="#">🔍</a>
-      <a href="#">➕</a>
-      <a href="#">🎥</a>
-      <a href="#">👤</a>
-    </nav>
+  <footer class="bottom-menu">
+    <a href="index.html">🏠 Início</a>
+    <a href="login.html">👤 Login</a>
+    <a href="admin.html">⚙️ Admin</a>
   </footer>
 </body>
 </html>

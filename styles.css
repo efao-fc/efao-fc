@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.top-bar, .bottom-menu {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.actions button {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+}
+.post {
+  background: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+}
