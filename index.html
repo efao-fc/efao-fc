@@ -1,49 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EFAO FC - Feed</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script defer src="feed.js"></script>
+  <title>EFAO-FC</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
 </head>
 <body>
-  <header class="top-header">
+  <header>
     <div class="logo">EFAO-FC</div>
-    <nav class="top-nav">
-      <a href="index.html" title="Início">🏠</a>
-      <a href="#" title="Publicar">➕</a>
-      <a href="#" title="Reels">🎞️</a>
-      <a href="#" title="Vídeos">📺</a>
-      <a href="#" title="Menu">☰</a>
+    <nav>
+      <a href="index.html">🏠 Início</a>
+      <a href="fotos.html">📷 Fotos</a>
+      <a href="videos.html">📺 Vídeos</a>
+      <a href="reels.html">🎞️ Reels</a>
+      <a href="jogos.html">📅 Jogos</a>
+      <a href="estatisticas.html">📊 Estatísticas</a>
     </nav>
   </header>
-
   <main>
-    <div class="story-section">
-      <label class="story-add">➕ Adicionar História
-        <input type="file" accept="image/*" onchange="addStory(this)">
-      </label>
-      <div id="stories"></div>
-    </div>
-
-    <section id="feed"></section>
-
-    <div class="post-form">
-      <h3>Nova Publicação</h3>
-      <input type="text" id="author" placeholder="Teu nome">
-      <input type="file" id="media" accept="image/*,video/*">
-      <textarea id="text" placeholder="Escreve algo..."></textarea>
-      <button onclick="postar()">Publicar</button>
-    </div>
+    <section id="feed">
+      <p>Publicações do clube aparecerão aqui em breve...</p>
+    </section>
   </main>
-
-  <footer class="bottom-nav">
-    <a href="index.html">🏠</a>
-    <a href="#">📷</a>
-    <a href="#">🎥</a>
-    <a href="#">👤</a>
-  </footer>
 </body>
 </html>
