@@ -28,3 +28,24 @@ textarea {
     height: 80px;
     margin: 10px 0;
 }
+
+nav.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 100;
+}
+nav.bottom-nav a {
+    color: #002366;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+nav.bottom-nav a:hover {
+    color: #0044cc;
+}
