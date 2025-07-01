@@ -1,37 +1,30 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     background-color: #f0f8ff;
     color: #002366;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #002366;
     color: white;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
 }
 .logo {
-    width: 80px;
+    width: 60px;
 }
 nav a {
     margin: 10px;
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
 }
 main {
-    padding: 20px;
+    padding: 1em;
 }
-footer {
-    text-align: center;
-    background-color: #002366;
-    color: white;
-    padding: 10px;
-    position: fixed;
+textarea {
     width: 100%;
-    bottom: 0;
+    height: 80px;
+    margin: 10px 0;
 }
